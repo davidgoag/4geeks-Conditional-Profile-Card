@@ -75,7 +75,7 @@ window.onload = function() {
   render(window.variables); //render the card for the first time
 
   document.querySelectorAll(".picker").forEach(function(elm) {
-    elm.addEventListener("change", function(e) {
+    elm.addEventListener("input", function(e) {
       // <- add a listener to every input
       const attribute = e.target.getAttribute("for"); // when any input changes, collect the value
       let values = {};
